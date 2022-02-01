@@ -6,3 +6,27 @@
 Setup an API Gateway using an OpenAPI Schema!
 
 toc::[]
+
+== Usage
+
+Use this module with your microservice terraform setup!
+
+[source,hcl]
+----
+module "api_gateway" {
+  source = "https://github.com/nsbno/terraform-aws-api-gateway?ref=x.y.z"
+
+  name_prefix      = "infrademo"
+  application_name = "demo"
+
+  domain_name = "infrademo.vydev.io"
+  base_path   = "demo"
+
+  schema = templatefile("../static/openapi/driftstjenester-backend.yml", {
+    hosted_zone_name     = local.shared_config.hosted_zone_name
+    base_path            = "infrademo"
+  })
+}
+----
+
+
