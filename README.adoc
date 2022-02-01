@@ -1,0 +1,8 @@
+= OpenAPI API Gateway
+:!toc-title:
+:!toc-placement:
+:toc:
+
+Setup an API Gateway using an OpenAPI Schema!
+
+toc::[]
