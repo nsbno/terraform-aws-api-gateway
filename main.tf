@@ -10,7 +10,7 @@ terraform {
 }
 
 resource "aws_api_gateway_rest_api" "this" {
-  name = "${var.name_prefix}-${var.application_name}"
+  name = "${var.application_name}"
   body = var.schema
 }
 
