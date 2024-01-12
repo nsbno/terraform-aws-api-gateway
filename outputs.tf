@@ -6,6 +6,10 @@ output "rest_api_id" {
   value = aws_api_gateway_rest_api.this.id
 }
 
+output "rest_api_name" {
+  value = var.application_name
+}
+
 output "stage_arn" {
   value = aws_api_gateway_stage.this.arn
 }
