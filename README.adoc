@@ -3,13 +3,13 @@
 :!toc-placement:
 :toc:
 
-Setup an API Gateway using an OpenAPI Schema!
+Setup an API Gateway V1 using an OpenAPI Schema!
 
 toc::[]
 
 == Usage
 
-Use this module with your microservice terraform setup!
+Remember to check out the link:variables.tf[*variables*] and link:outputs.tf[*outputs*] to see all options.
 
 [source,hcl]
 ----
